@@ -16,7 +16,7 @@ constructor(){
 }
 
 addToList = (newUser) => {
-  if(newUser.name === '') {
+  if(newUser.name === undefined || newUser.name === '' ) {
     newUser.name = `anonimus ${newUser.ip}`
     console.log(newUser.name)
   }
